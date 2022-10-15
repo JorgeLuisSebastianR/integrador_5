@@ -15,7 +15,7 @@ use App\Http\Controllers\QuimicoColorController;
 use App\Http\Controllers\TratamientoController;
 use App\Http\Controllers\QuimicoTratamientoController;
 use App\Http\Controllers\QuimicoController;
-
+//55
 
 Route::get('/', function () {
     return view('welcome');
