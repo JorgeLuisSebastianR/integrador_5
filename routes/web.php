@@ -18,4 +18,17 @@ use App\Http\Controllers\QuimicoController;
 //55
 
 Route::get('/', function () { return view('welcome');});
-Route::get('/', function () { return view('welcome');});
+Route::get('Personal', 'App\Http\Controllers\PersonalController@index');
+Route::get('Puesto', 'App\Http\Controllers\PuestoController@index');
+Route::get('Usuario', 'App\Http\Controllers\UsuarioController@index');
+Route::get('Departamento', 'App\Http\Controllers\DepartamentoController@index');
+Route::get('Planta', 'App\Http\Controllers\PlantaController@index');
+Route::get('OrdenProduccion', 'App\Http\Controllers\OrdenProduccionController@index');
+Route::get('Cliente', 'App\Http\Controllers\ClienteController@index');
+Route::get('Material', 'App\Http\Controllers\MaterialController@index');
+Route::get('MaterialOrdenProduccion', 'App\Http\Controllers\MaterialOrdenProduccionController@index');
+Route::get('Color', 'App\Http\Controllers\ColorController@index');
+Route::get('QuimicoColor', 'App\Http\Controllers\QuimicoColorController@index');
+Route::get('QuimicoColor','App\Http\Controllers\TratamientoController@index');
+Route::get('QuimicoTratamiento', 'App\Http\Controllers\QuimicoTratamientoController');
+Route::get('Quimic', 'App\Http\Controllers\QuimicoController@index');
