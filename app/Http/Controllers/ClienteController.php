@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ClienteController extends Controller
 {
     public function index(){
-        return "HOlA MUNDO";
+        return "Hola cliente";
     }
 }
