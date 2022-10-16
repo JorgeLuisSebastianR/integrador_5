@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class QuimicoTratamientoController extends Controller
 {
-    //
+    //funciones index
+    public function index(){
+        return "Hola QuimicoTratamiento";
+    }
 }
