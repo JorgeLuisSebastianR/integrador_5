@@ -32,3 +32,6 @@ Route::get('QuimicoColor', 'App\Http\Controllers\QuimicoColorController@index');
 Route::get('Tratamiento','App\Http\Controllers\TratamientoController@index');
 Route::get('QuimicoTratamiento', 'App\Http\Controllers\QuimicoTratamientoController@index');
 Route::get('Quimico', 'App\Http\Controllers\QuimicoController@index');
+
+
+///2222
