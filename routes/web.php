@@ -15,6 +15,7 @@ use App\Http\Controllers\QuimicoTratamientoController;
 use App\Http\Controllers\OrdenProduccionController;
 use App\Http\Controllers\DepartamentoController;
 //Cuarto en existir
+use App\Http\Controllers\TratamientoOrdenProduccionController;
 use App\Http\Controllers\MaterialOrdenProduccionController;
 use App\Http\Controllers\PuestoController;
 //Quinto en existir
@@ -23,6 +24,8 @@ use App\Http\Controllers\EmpleadoController;
 use App\Http\Controllers\JefeDepartamentoController;
 //Sectimo en existir
 use App\Http\Controllers\EstatusController;
+
+
 
 
 Route::get('/', function () { return view('welcome');});
@@ -41,6 +44,7 @@ Route::get('QuimicoTratamiento', 'App\Http\Controllers\QuimicoTratamientoControl
 Route::get('OrdenProduccion', 'App\Http\Controllers\OrdenProduccionController@index');
 Route::get('Departamento', 'App\Http\Controllers\DepartamentoController@index');
 //Cuarto en existir
+Route::get('TratamientoOrdenProduccion', 'App\Http\Controllers\TratamientoOrdenProduccionController@index');
 Route::get('MaterialOrdenProduccion', 'App\Http\Controllers\MaterialOrdenProduccionController@index');
 Route::get('Puesto', 'App\Http\Controllers\PuestoController@index');
 //Quinto en existir

@@ -15,7 +15,7 @@ class TratamientoOrdenProduccionController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Tratamiento Orden Produccion";
     }
 
     /**
