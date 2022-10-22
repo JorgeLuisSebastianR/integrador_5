@@ -17,7 +17,9 @@ use App\Http\Controllers\QuimicoController;
 //55
 
 Route::get('/', function () { return view('welcome');});
+//Primeras en existir
 Route::get('Personal', 'App\Http\Controllers\PersonalController@index');
+//Route::get('Personal', 'App\Http\Controllers\PersonalController@index');
 Route::get('Puesto', 'App\Http\Controllers\PuestoController@index');
 Route::get('Usuario', 'App\Http\Controllers\UsuarioController@index');
 Route::get('Departamento', 'App\Http\Controllers\DepartamentoController@index');
