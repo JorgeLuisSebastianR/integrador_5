@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('estatuses', function (Blueprint $table) {
-            //tiene primarias/ foraneas
+         ///TIENE LLAVES PRIMARIAS/FORANEAS no sé como xd
             $table->id();
             $table->timestamps();
         });

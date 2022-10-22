@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('quimico_tratamientos', function (Blueprint $table) {
-             ///tiene llaves primarias/ forarenas
+           ///TIENE LLAVES PRIMARIAS/FORANEAS no sé como xd
             $table->id();
             $table->timestamps();
         });

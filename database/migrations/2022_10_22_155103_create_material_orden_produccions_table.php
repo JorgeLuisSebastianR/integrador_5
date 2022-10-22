@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('material_orden_produccions', function (Blueprint $table) {
-          ///lleva foraneas y primarias a la vez
+      ///TIENE LLAVES PRIMARIAS/FORANEAS no sé como xd
           $table->id();
           $table->timestamps();
         });
