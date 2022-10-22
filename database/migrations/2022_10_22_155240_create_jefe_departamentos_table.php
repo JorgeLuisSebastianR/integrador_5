@@ -14,8 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('jefe_departamentos', function (Blueprint $table) {
+            //id con nombre
             $table->id();
-            $table->timestamps();
+            //llave foranea
+            /*$table->unsignedBigInteger('idEmpleado');
+               $table->foreign('idEmpleado')->references('id')->on('Empleado');*/
+            $table->string('nombreUsuario', 30)->unique();
+            $table->string('contra', 30);
         });
     }
 

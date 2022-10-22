@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('estatuses', function (Blueprint $table) {
+            //tiene primarias/ foraneas
             $table->id();
             $table->timestamps();
         });

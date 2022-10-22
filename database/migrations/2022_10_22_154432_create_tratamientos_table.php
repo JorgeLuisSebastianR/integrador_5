@@ -14,8 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tratamientos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+           //id falta colocar nombre "idTratamiento"
+          $table->id();
+          $table->string('nombreTratamiento', 50);
+          $table->string('nombreFormula', 30);
+         
         });
     }
 

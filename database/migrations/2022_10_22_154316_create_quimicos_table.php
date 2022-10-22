@@ -14,8 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('quimicos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+              //id falta colocar nombre "idQuimico"
+              $table->id();
+              $table->string('nombre', 30);
+              $table->string('fabricante', 50);
+              $table->string('descripcion', 150)->unique();
+              $table->float('cantidadDisponible', 10, 5);
+           
         });
     }
 

@@ -14,8 +14,25 @@ return new class extends Migration
     public function up()
     {
         Schema::create('plantas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+          //me falto poner completo el nombre del idPlantas
+          $table->id();
+
+
+
+              
+          /*  //llaves foraneas #NO SÉ QUE ONDA CON EL ADMIN#
+           $table->unsignedBigInteger('idAdmin');
+           $table->foreign('idAdmin')->references('id')->on('Admin');*/
+
+
+
+
+           //atributos normales
+           $table->string('planta', 50);
+           $table->string('alias', 60)->unique();
+           $table->string('telefono', 10);
+           $table->string('domicilio', 200);
+        
         });
     }
 

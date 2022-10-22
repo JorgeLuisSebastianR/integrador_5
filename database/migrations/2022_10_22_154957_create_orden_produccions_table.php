@@ -14,8 +14,30 @@ return new class extends Migration
     public function up()
     {
         Schema::create('orden_produccions', function (Blueprint $table) {
+            //id falta colocar nombre "idOrdemProduccion"
             $table->id();
-            $table->timestamps();
+            /*  //llaves foraneas 
+               $table->unsignedBigInteger('idPlanta');
+               $table->foreign('idPlanta')->references('id')->on('Planta');*/
+
+            /*$table->unsignedBigInteger('idCliente');
+               $table->foreign('idCliente')->references('id')->on('Cliente');*/
+
+            /*$table->unsignedBigInteger('idColor');
+               $table->foreign('idColor')->references('id')->on('Color');*/
+
+            /*$table->unsignedBigInteger('idTratamiento');
+               $table->foreign('idTratamiento')->references('id')->on('Tratamiento');*/
+
+            $table->float('cantidad', 10, 5);
+            $table->string('descripcion', 20)->unique();
+            //tengo dudas con los timestamp
+            $table->timestamp('fechaRegistro', $precision = 5);
+            $table->date('fechaCaptura');
+            $table->date('fechaEntrega');
+            $table->string('domicilioEnvio', 200);
+            $table->string('comentarios', 150)->unique();
+            $table->enum('estado', ['En estado', 'Terminado']);
         });
     }
 

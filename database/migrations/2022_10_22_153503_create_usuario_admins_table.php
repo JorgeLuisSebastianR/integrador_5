@@ -14,8 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('usuario_admins', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+           //id falta colocar nombre "idAdmin"
+           $table->id();
+           $table->string('nombreUsuario', 30)->unique();
+           $table->string('contra', 30);
         });
     }
 

@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('materials', function (Blueprint $table) {
+            //id falta colocar nombre "idMaterial"
             $table->id();
-            $table->timestamps();
+            $table->string('nombre', 30);
+            $table->string('fabricante', 30);
+            $table->string('descripcion', 30)->unique();
+            $table->float('cantidadDisponible', 10, 5);
         });
     }
 

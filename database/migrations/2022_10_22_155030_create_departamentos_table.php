@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('departamentos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            //id con nombre
+            $table->id(); 
+            //llave foranea
+            /*$table->unsignedBigInteger('idPlanta');
+               $table->foreign('idPlanta')->references('id')->on('Planta');*/
+               $table->string('nombre', 200);
         });
     }
 
