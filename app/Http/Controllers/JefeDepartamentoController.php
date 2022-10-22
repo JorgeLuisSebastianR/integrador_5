@@ -15,7 +15,7 @@ class JefeDepartamentoController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Jede Departamento";
     }
 
     /**

@@ -15,7 +15,7 @@ class QuimicoColorController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Quimico Color";
     }
 
     /**

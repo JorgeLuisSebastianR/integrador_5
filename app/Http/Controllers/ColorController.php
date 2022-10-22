@@ -15,7 +15,7 @@ class ColorController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Color";
     }
 
     /**

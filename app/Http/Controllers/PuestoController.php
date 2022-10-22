@@ -15,7 +15,7 @@ class PuestoController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Puesto";
     }
 
     /**

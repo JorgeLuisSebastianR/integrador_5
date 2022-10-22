@@ -15,7 +15,7 @@ class PlantaController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Planta";
     }
 
     /**
