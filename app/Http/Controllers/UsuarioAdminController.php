@@ -15,7 +15,7 @@ class UsuarioAdminController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde usuario admin";
     }
 
     /**

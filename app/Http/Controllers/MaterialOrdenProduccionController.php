@@ -15,7 +15,7 @@ class MaterialOrdenProduccionController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde Material orden Producion";
     }
 
     /**

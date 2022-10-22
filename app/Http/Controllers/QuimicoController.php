@@ -15,7 +15,7 @@ class QuimicoController extends Controller
      */
     public function index()
     {
-        //
+        return "Holas desde quimico";
     }
 
     /**
