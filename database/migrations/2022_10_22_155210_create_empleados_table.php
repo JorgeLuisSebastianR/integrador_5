@@ -44,6 +44,7 @@ return new class extends Migration
           $table->timestamps();
         });
     }
+    //marco
 
     /**
      * Reverse the migrations.
